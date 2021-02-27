@@ -73,7 +73,7 @@ public class payload {
 	}
 	public static String AddBook(String aisle,String isbn) {
 		String book = "{\r\n"
-				+ "    \"name\":\"Learn Appium Automation with Java\",\r\n"
+				+ "    \"name\":\"Learn Rest Automation with Java\",\r\n"
 				+ "    \"isbn\":\""+isbn+"\",\r\n"
 				+ "    \"aisle\":\""+aisle+"\",\r\n"
 				+ "    \"author\":\"John foe\"\r\n"
@@ -82,5 +82,9 @@ public class payload {
 		return book;
 				
 				
+	}
+	
+	public static String deletebok(String id) {
+		return "{ \"Id\":\""+id+"\"}";
 	}
 }
